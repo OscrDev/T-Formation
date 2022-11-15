@@ -80,8 +80,8 @@ public class SellSystem {
     }
 /**
  * 
- * @param Introduce quanty 
- * @param Introduce date 
+ * @param  quanty : number of tickets
+ * @param  date : Information of tickets
  */
     public void buyTickets(int quanty, String date) {
         //TODO
@@ -95,9 +95,9 @@ public class SellSystem {
 
     }
     /**
-     * Price method calculator
-     * @param quanty
-     * @return 
+     * 
+     * @param quanty : number of tickets
+     * @return int
      */
     public int totalPrice(int quanty) {
         
@@ -105,13 +105,13 @@ public class SellSystem {
 
     }
     /**
-     * 
-     * @param money
-     * @param total
-     * @return int with change money
+     * Change money
+     * @param money : User introduce money
+     * @param total : Total change money
+     * @return int change 
      */
     public int changeMoney(int money, int total) {
-        int change = -1;//se retorna -1 porque si yo introduzco el cambio es 0 y el if va a fallar
+        int change = -1;
         try {
             if (money >= total) {
                 change = total - money;

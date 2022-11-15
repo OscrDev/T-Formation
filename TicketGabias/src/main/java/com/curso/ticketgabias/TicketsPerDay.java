@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.curso.ticketgabias;
 
 import java.util.HashMap;
@@ -9,9 +6,12 @@ import java.util.HashMap;
 /**
  *
  * @author omarinmo
+ * @version 0.1
+ * 
  */
-public class TicketsPerDay {
 
+public class TicketsPerDay {
+    //Attributes 
     private int price;
     private String date;
     private int quanty;
@@ -19,13 +19,14 @@ public class TicketsPerDay {
     private static final int MAX_QUANTY = 10;
     /**
      * Constructor without parameters
+     * 
      */
     public TicketsPerDay() {
         this.price = MAX_PRICE;
     }
     /**
      *  Constructor with parameters
-     * @param date 
+     * @param date : Enter the date of the ticket
      */
     public TicketsPerDay(String date) {
         this.price = MAX_PRICE;
@@ -34,43 +35,44 @@ public class TicketsPerDay {
 
     }
     /**
-     * 
-     * @return price 
+     * Get price of the ticket
+     * @return price : Ticket value
      */
     public int getPrice() {
         return price;
     }
     /**
      * Modify price for tickets
-     * @param price 
+     * @param price : Ticket value
      */
     public void setPrice(int price) {
         this.price = price;
     }
     /**
-     * 
-     * @return date
+     * Get date of the ticket 
+     * @return date : Ticket date information string
      */
     public String getDate() {
         return date;
     }
-    /**
-     * Modify date
-     * @param date 
-     */
+    
+   /**
+    * Modify information date of the ticket
+    * @param date : Ticket date information
+    */
     public void setDate(String date) {
         this.date = date;
     }
     /**
-     * 
-     * @return quanty ticketsPerDay
+     * Get quanty of tickets
+     * @return quanty : numbers of tickets
      */
     public int getQuanty() {
         return quanty;
     }
     /**
-     * 
-     * @param Modify quanty 
+     * Modify quanty of tickets
+     * @param quanty : numbers of tickets
      */
     public void setQuanty(int quanty) {
         this.quanty = quanty;

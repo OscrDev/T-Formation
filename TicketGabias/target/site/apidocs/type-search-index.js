@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.curso.ticketgabias","l":"CLI"},{"p":"com.curso.ticketgabias","l":"Main"},{"p":"com.curso.ticketgabias","l":"SellSystem"},{"p":"com.curso.ticketgabias","l":"TicketsPerDay"}];updateSearchResults();

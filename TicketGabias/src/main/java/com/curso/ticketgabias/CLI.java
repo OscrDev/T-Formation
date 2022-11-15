@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class CLI {
     /**
-     * Start method interfaz
+     * Start method 
      */
     public void start() {
         Scanner soption = new Scanner(System.in);
@@ -38,25 +38,24 @@ public class CLI {
                 int total = system.totalPrice(quanty);
                 System.out.println("The value of your tickets is: "+total);
 
-                //Trycacth para el dinero
+                //Trycacth for money
                 System.out.println("Introduce your money: ");
                 int money = smoney.nextInt();
                 System.out.println("Calculating your change");
                 if (system.changeMoney(money, total) <= 0) {
 
-                    //quita el numero de entradas
+                    //quit number tickets
                     system.buyTickets(quanty, date);
                 }
 
-                //system.CheckDate(numero de entradas) Comprueba si hay entradas en esa fecha
-                //Si hay entradas m
+                
             }
-            //exit from the program
+            
             if (option == 2) {
                 System.out.println("EXIT  ...");
                 exit = true;
             }
         }
-    }// FIN INTERFAZ
+    }
 
 }
